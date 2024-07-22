@@ -1,0 +1,20 @@
+{
+  "item_group.librecomponents.common": "Libre Components",
+
+  "item.librecomponents.cpu_tier_1": "CPU Tier 5",
+  "item.librecomponents.cpu_tier_1.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_2": "CPU Tier 6",
+  "item.librecomponents.cpu_tier_2.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_3": "CPU Tier 7",
+  "item.librecomponents.cpu_tier_3.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_4": "CPU Tier 8",
+  "item.librecomponents.cpu_tier_4.desc": "Processes computer instructions.",
+  "item.librecomponents.floppy": "软盘",
+  "item.librecomponents.floppy.desc": "Portable storage used to transfer data between Computers.",
+  "item.librecomponents.floppy_modern": "现代软盘",
+  "item.librecomponents.floppy_modern.desc": "用于在计算机之间传输数据的较新版本的便携式存储。",
+  "item.librecomponents.hard_drive": "硬盘",
+  "item.librecomponents.hard_drive.desc": "Mass storage for operating systems and data.",
+  "item.librecomponents.memory": "内存条",
+  "item.librecomponents.memory.desc": "Random Access Memory (RAM) used in Computers and Robots."
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "librecomponents:item/floppy_base",
+    "layer1": "librecomponents:item/floppy_tint"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "item_group.librecomponents.common": "Libre Components",
+
+  "item.librecomponents.cpu_tier_1": "CPU Tier 5",
+  "item.librecomponents.cpu_tier_1.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_2": "CPU Tier 6",
+  "item.librecomponents.cpu_tier_2.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_3": "CPU Tier 7",
+  "item.librecomponents.cpu_tier_3.desc": "Processes computer instructions.",
+  "item.librecomponents.cpu_tier_4": "CPU Tier 8",
+  "item.librecomponents.cpu_tier_4.desc": "Processes computer instructions.",
+  "item.librecomponents.floppy": "Floppy Disk",
+  "item.librecomponents.floppy.desc": "Portable storage used to transfer data between Computers.",
+  "item.librecomponents.floppy_modern": "Modern Floppy Disk",
+  "item.librecomponents.floppy_modern.desc": "Newer version of portable storage used to transfer data between Computers."
+}
