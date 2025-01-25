@@ -2,7 +2,7 @@ package com.therealm18studios.lc;
 
 import com.therealm18studios.lc.common.item.ItemGroup;
 import com.therealm18studios.lc.common.item.Items;
-import li.cil.oc2r.common.ConfigManager;
+import li.cil.oc2.common.ConfigManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 

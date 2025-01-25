@@ -1,7 +1,7 @@
 package com.therealm18studios.lc.data;
 
 import com.therealm18studios.lc.LibreComponents;
-import li.cil.oc2r.common.entity.Entities;
+import li.cil.oc2.common.entity.Entities;
 import com.therealm18studios.lc.common.item.Items;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

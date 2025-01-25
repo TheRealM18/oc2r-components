@@ -1,7 +1,7 @@
 package com.therealm18studios.lc.common.item;
 
 import com.therealm18studios.lc.LibreComponents;
-import li.cil.oc2r.common.item.*;
+import li.cil.oc2.common.item.*;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

@@ -16,7 +16,7 @@ public final class ItemGroup {
         // Set name of tab to display
         .title(Component.translatable("item_group." + LibreComponents.MOD_ID + ".common"))
         // Set icon of creative tab
-        .icon(() -> new ItemStack(li.cil.oc2r.common.item.Items.COMPUTER.get()))
+        .icon(() -> new ItemStack(li.cil.oc2.common.item.Items.COMPUTER.get()))
         // Add default items to tab
         .displayItems((params, output) -> {
             // Items
