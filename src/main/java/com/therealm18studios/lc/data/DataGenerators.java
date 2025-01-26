@@ -14,20 +14,6 @@ public final class DataGenerators {
         final DataGenerator generator = event.getGenerator();
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-//        generator.addProvider(
-//            event.includeServer(),
-//            (DataProvider.Factory<LootTableProvider>) output -> new LootTableProvider(
-//                output,
-//                Set.of(),
-//                Collections.singletonList(
-//                    new LootTableProvider.SubProviderEntry(
-//                        ModLootTableProvider.ModBlockLootTables::new,
-//                        LootContextParamSets.BLOCK
-//                    )
-//                )
-//            )
-//        );
-        generator.addProvider(event.includeServer(), (DataProvider.Factory<ModRecipesProvider>) ModRecipesProvider::new);
         generator.addProvider(event.includeClient(), new ModItemModelProvider(generator.getPackOutput(), existingFileHelper));
     }
 }
