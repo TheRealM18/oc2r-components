@@ -40,8 +40,8 @@ public final class Manuals {
         CONTENT_PROVIDERS.register(FMLJavaModLoadingContext.get().getModEventBus());
         TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
-        PATH_PROVIDERS.register("path_provider", () -> new NamespacePathProvider(LibreComponents.MOD_ID));
-        CONTENT_PROVIDERS.register("content_provider", () -> new NamespaceDocumentProvider(LibreComponents.MOD_ID, "doc"));
+//        PATH_PROVIDERS.register("path_provider", () -> new NamespacePathProvider(LibreComponents.MOD_ID));
+//        CONTENT_PROVIDERS.register("content_provider", () -> new NamespaceDocumentProvider(LibreComponents.MOD_ID, "doc"));
 
         TABS.register("librecomponents", () -> new ItemStackTab(
             ManualModel.LANGUAGE_KEY + "/librecomponents/index.md",
