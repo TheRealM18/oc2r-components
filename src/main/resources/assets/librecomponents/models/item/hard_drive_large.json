@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "librecomponents:item/hard_drive_base",
-    "layer1": "librecomponents:item/hard_drive_tint"
+    "layer1": "librecomponents:item/hard_drive_large"
   }
 }
