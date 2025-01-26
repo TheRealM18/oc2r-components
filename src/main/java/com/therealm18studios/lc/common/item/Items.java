@@ -1,91 +1,71 @@
 package com.therealm18studios.lc.common.item;
 
 import com.therealm18studios.lc.LibreComponents;
-import li.cil.oc2.common.item.*;
+import li.cil.oc2.common.item.MemoryItem;
+import li.cil.oc2.common.item.HardDriveItem;
+import li.cil.oc2.common.item.CPUItem;
+import li.cil.oc2.common.item.FloppyItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public final class Items {
-    private static final DeferredRegister<Item> ITEMS;
-    public static final RegistryObject<MemoryItem> MEMORY_SMALL;
-    public static final RegistryObject<MemoryItem> MEMORY_MEDIUM;
-    public static final RegistryObject<MemoryItem> MEMORY_LARGE;
-    public static final RegistryObject<MemoryItem> MEMORY_EXTRA_LARGE;
-    public static final RegistryObject<HardDriveItem> HARD_DRIVE_SMALL;
-    public static final RegistryObject<HardDriveItem> HARD_DRIVE_MEDIUM;
-    public static final RegistryObject<HardDriveItem> HARD_DRIVE_LARGE;
-    public static final RegistryObject<HardDriveItem> HARD_DRIVE_EXTRA_LARGE;
-    public static final RegistryObject<CPUItem> CPU_TIER_1;
-    public static final RegistryObject<CPUItem> CPU_TIER_2;
-    public static final RegistryObject<CPUItem> CPU_TIER_3;
-    public static final RegistryObject<CPUItem> CPU_TIER_4;
-    public static final RegistryObject<FloppyItem> FLOPPY;
-    public static final RegistryObject<FloppyItem> FLOPPY_MODERN;
+    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, LibreComponents.MOD_ID);
 
-    public Items() {
-    }
+    ///////////////////////////////////////////////////////////////////
+
+    public static final RegistryObject<MemoryItem> MEMORY_SMALL = register("memory_small", () ->
+        new MemoryItem(33554432));
+    public static final RegistryObject<MemoryItem> MEMORY_MEDIUM = register("memory_medium", () ->
+        new MemoryItem(67108864));
+    public static final RegistryObject<MemoryItem> MEMORY_LARGE = register("memory_large", () ->
+        new MemoryItem(134217728));
+    public static final RegistryObject<MemoryItem> MEMORY_EXTRA_LARGE = register("memory_extra_large", () ->
+        new MemoryItem(268435456));
+
+    public static final RegistryObject<HardDriveItem> HARD_DRIVE_SMALL = register("hard_drive_small", () ->
+        new HardDriveItem(33554432, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<HardDriveItem> HARD_DRIVE_MEDIUM = register("hard_drive_medium", () ->
+        new HardDriveItem(67108864, DyeColor.GREEN));
+    public static final RegistryObject<HardDriveItem> HARD_DRIVE_LARGE = register("hard_drive_large", () ->
+        new HardDriveItem(134217728, DyeColor.CYAN));
+    public static final RegistryObject<HardDriveItem> HARD_DRIVE_EXTRA_LARGE = register("hard_drive_extra_large", () ->
+        new HardDriveItem(268435456, DyeColor.YELLOW));
+
+    public static final RegistryObject<CPUItem> CPU_TIER_1 = register("cpu_tier_1", () ->
+        new CPUItem(250000000));
+    public static final RegistryObject<CPUItem> CPU_TIER_2 = register("cpu_tier_2", () ->
+        new CPUItem(300000000));
+    public static final RegistryObject<CPUItem> CPU_TIER_3 = register("cpu_tier_3", () ->
+        new CPUItem(350000000));
+    public static final RegistryObject<CPUItem> CPU_TIER_4 = register("cpu_tier_4", () ->
+        new CPUItem(400000000));
+
+    public static final RegistryObject<FloppyItem> FLOPPY = register("floppy", () ->
+        new FloppyItem(2949120));
+    public static final RegistryObject<FloppyItem> FLOPPY_MODERN = register("floppy_modern", () ->
+        new FloppyItem(5898240));
+
+    ///////////////////////////////////////////////////////////////////
 
     public static void initialize() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    private static RegistryObject<Item> register(String name) {
-        return register(name, ModItem::new);
-    }
+    ///////////////////////////////////////////////////////////////////
 
-    private static <T extends Item> RegistryObject<T> register(String name, Supplier<T> factory) {
+    private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> factory) {
         return ITEMS.register(name, factory);
     }
 
-    static {
-        ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, LibreComponents.MOD_ID);
-        MEMORY_SMALL = register("memory_small", () -> {
-            return new MemoryItem(33554432);
-        });
-        MEMORY_MEDIUM = register("memory_medium", () -> {
-            return new MemoryItem(67108864);
-        });
-        MEMORY_LARGE = register("memory_large", () -> {
-            return new MemoryItem(134217728);
-        });
-        MEMORY_EXTRA_LARGE = register("memory_extra_large", () -> {
-            return new MemoryItem(268435456);
-        });
-        HARD_DRIVE_SMALL = register("hard_drive_small", () -> {
-            return new HardDriveItem(33554432, DyeColor.PINK);
-        });
-        HARD_DRIVE_MEDIUM = register("hard_drive_medium", () -> {
-            return new HardDriveItem(67108864, DyeColor.RED);
-        });
-        HARD_DRIVE_LARGE = register("hard_drive_large", () -> {
-            return new HardDriveItem(134217728, DyeColor.BLUE);
-        });
-        HARD_DRIVE_EXTRA_LARGE = register("hard_drive_extra_large", () -> {
-            return new HardDriveItem(268435456, DyeColor.BLACK);
-        });
-        CPU_TIER_1 = register("cpu_tier_1", () -> {
-            return new CPUItem(250000000);
-        });
-        CPU_TIER_2 = register("cpu_tier_2", () -> {
-            return new CPUItem(300000000);
-        });
-        CPU_TIER_3 = register("cpu_tier_3", () -> {
-            return new CPUItem(350000000);
-        });
-        CPU_TIER_4 = register("cpu_tier_4", () -> {
-            return new CPUItem(400000000);
-        });
-        FLOPPY = register("floppy", () -> {
-            return new FloppyItem(2949120);
-        });
-        FLOPPY_MODERN = register("floppy_modern", () -> {
-            return new FloppyItem(5898240);
-        });
+    private static <TBlock extends Block, TItem extends Item> RegistryObject<TItem> register(final RegistryObject<TBlock> block, final Function<TBlock, TItem> factory) {
+        return register(block.getId().getPath(), () -> factory.apply(block.get()));
     }
 }

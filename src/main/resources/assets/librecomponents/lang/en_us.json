@@ -1,6 +1,8 @@
 {
   "item_group.librecomponents.common": "Libre Components",
 
+  "manual.librecomponents.items": "Libre Components",
+
   "item.librecomponents.cpu_tier_1": "CPU Tier 5",
   "item.librecomponents.cpu_tier_1.desc": "Processes computer instructions.",
   "item.librecomponents.cpu_tier_2": "CPU Tier 6",
