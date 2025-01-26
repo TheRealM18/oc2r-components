@@ -5,8 +5,6 @@ import com.therealm18studios.lc.common.item.Items;
 import li.cil.manual.api.ManualModel;
 import li.cil.manual.api.Tab;
 import li.cil.manual.api.prefab.Manual;
-import li.cil.manual.api.prefab.provider.NamespaceDocumentProvider;
-import li.cil.manual.api.prefab.provider.NamespacePathProvider;
 import li.cil.manual.api.prefab.tab.ItemStackTab;
 import li.cil.manual.api.provider.DocumentProvider;
 import li.cil.manual.api.provider.PathProvider;
@@ -39,9 +37,6 @@ public final class Manuals {
         PATH_PROVIDERS.register(FMLJavaModLoadingContext.get().getModEventBus());
         CONTENT_PROVIDERS.register(FMLJavaModLoadingContext.get().getModEventBus());
         TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
-//        PATH_PROVIDERS.register("path_provider", () -> new NamespacePathProvider(LibreComponents.MOD_ID));
-//        CONTENT_PROVIDERS.register("content_provider", () -> new NamespaceDocumentProvider(LibreComponents.MOD_ID, "doc"));
 
         TABS.register("librecomponents", () -> new ItemStackTab(
             ManualModel.LANGUAGE_KEY + "/librecomponents/index.md",
