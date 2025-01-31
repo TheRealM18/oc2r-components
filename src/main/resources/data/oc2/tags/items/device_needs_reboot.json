@@ -8,10 +8,6 @@
     "librecomponents:memory_small",
     "librecomponents:memory_medium",
     "librecomponents:memory_large",
-    "librecomponents:memory_extra_large",
-    "librecomponents:cpu_tier_1",
-    "librecomponents:cpu_tier_2",
-    "librecomponents:cpu_tier_3",
-    "librecomponents:cpu_tier_4"
+    "librecomponents:memory_extra_large"
   ]
 }
