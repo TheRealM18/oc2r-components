@@ -84,12 +84,11 @@ dependencies {
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
     runtimeOnly fileTree(dir: 'libs', include: '*.jar')
-    runtimeOnly fg.deobf("curse.maven:architectury-api-419699:5137942")
-    runtimeOnly fg.deobf("curse.maven:jei-238222:5846858")
-    runtimeOnly fg.deobf("curse.maven:tiny-redstone-453746:5318126")
+    runtimeOnly fg.deobf("curse.maven:architectury-api-419699:3669448")
+    implementation fg.deobf("curse.maven:markdownmanual-502485:3738124")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:9.7.0.180")
 
-    implementation fg.deobf("curse.maven:markdownmanual-502485:4306669")
-    implementation fg.deobf("curse.maven:libre-computers-1163239:6136998")
+    implementation fg.deobf("curse.maven:libre-computers-1163239:6137004")
 
     }
 

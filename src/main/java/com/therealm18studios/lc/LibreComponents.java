@@ -1,6 +1,5 @@
 package com.therealm18studios.lc;
 
-import com.therealm18studios.lc.common.item.ItemGroup;
 import com.therealm18studios.lc.common.item.Items;
 import com.therealm18studios.lc.manual.Manuals;
 import li.cil.oc2.common.ConfigManager;
@@ -20,6 +19,5 @@ public final class LibreComponents {
 
         Items.initialize();
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Manuals::initialize);
-//        ItemGroup.COMMON.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }

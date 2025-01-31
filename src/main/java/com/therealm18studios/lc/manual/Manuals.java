@@ -6,7 +6,7 @@ import li.cil.manual.api.ManualModel;
 import li.cil.manual.api.Tab;
 import li.cil.manual.api.prefab.tab.ItemStackTab;
 import li.cil.manual.api.util.Constants;
-import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -25,7 +25,7 @@ public final class Manuals {
 
         TABS.register("librecomponents", () -> new ItemStackTab(
             ManualModel.LANGUAGE_KEY + "/librecomponents/index.md",
-            Component.translatable("manual." + LibreComponents.MOD_ID + ".items"),
+            new TranslatableComponent("manual." + LibreComponents.MOD_ID + ".items"),
             new ItemStack(Items.HARD_DRIVE_EXTRA_LARGE.get())));
     }
 }
