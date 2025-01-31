@@ -1,7 +1,6 @@
 package com.therealm18studios.lc.data;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DataProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +13,8 @@ public final class DataGenerators {
         final DataGenerator generator = event.getGenerator();
         final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(generator.getPackOutput(), existingFileHelper));
+        if (event.includeClient()) {
+            generator.addProvider(true, new ModItemModelProvider(generator, existingFileHelper));
+        }
     }
 }

@@ -71,18 +71,27 @@ repositories {
             }
         }
     }
+    flatDir {
+        dirs 'libs'
+    }
+
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
-    implementation fg.deobf("curse.maven:markdownmanual-502485:4873115")
-    implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
-    implementation fg.deobf("curse.maven:libre-computers-1163239:6126363")
+    runtimeOnly fileTree(dir: 'libs', include: '*.jar')
+    runtimeOnly fg.deobf("curse.maven:architectury-api-419699:5137942")
+    runtimeOnly fg.deobf("curse.maven:jei-238222:5846858")
+    runtimeOnly fg.deobf("curse.maven:tiny-redstone-453746:5318126")
 
-    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.3.0.4")
-}
+    implementation fg.deobf("curse.maven:markdownmanual-502485:4306669")
+    implementation fg.deobf("curse.maven:libre-computers-1163239:6136998")
+
+    }
 
 System.setProperty("line.separator", "\n")
 

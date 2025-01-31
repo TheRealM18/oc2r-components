@@ -3,7 +3,7 @@ package com.therealm18studios.lc.data;
 import com.therealm18studios.lc.LibreComponents;
 import li.cil.oc2.common.entity.Entities;
 import com.therealm18studios.lc.common.item.Items;
-import net.minecraft.data.PackOutput;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -12,8 +12,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 public final class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(final PackOutput output, final ExistingFileHelper existingFileHelper) {
-        super(output, LibreComponents.MOD_ID, existingFileHelper);
+    public ModItemModelProvider(final DataGenerator generator, final ExistingFileHelper existingFileHelper) {
+        super(generator, LibreComponents.MOD_ID, existingFileHelper);
     }
 
     @Override
@@ -22,10 +22,10 @@ public final class ModItemModelProvider extends ItemModelProvider {
         simple(Items.MEMORY_MEDIUM);
         simple(Items.MEMORY_LARGE);
         simple(Items.MEMORY_EXTRA_LARGE);
-        simple(Items.CPU_TIER_1);
-        simple(Items.CPU_TIER_2);
-        simple(Items.CPU_TIER_3);
-        simple(Items.CPU_TIER_4);
+//        simple(Items.CPU_TIER_1);
+//        simple(Items.CPU_TIER_2);
+//        simple(Items.CPU_TIER_3);
+//        simple(Items.CPU_TIER_4);
         simple(Items.HARD_DRIVE_SMALL, "item/hard_drive_base")
             .texture("layer1", "item/hard_drive_tint");
         simple(Items.HARD_DRIVE_MEDIUM, "item/hard_drive_base")

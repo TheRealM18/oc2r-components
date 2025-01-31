@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ITI",
-    "EBE"
+    "EBE",
+    "ITI"
   ],
   "key": {
     "I": {
-      "item": "oc2:hard_drive_extra_large"
+      "item": "oc2:hard_drive_large"
     },
     "T": {
       "item": "oc2:transistor"

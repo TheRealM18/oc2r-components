@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ITI",
-    " B "
+    " B ",
+    "ITI"
   ],
   "key": {
     "I": {
-      "item": "oc2:memory_extra_large"
+      "item": "oc2:memory_large"
     },
     "T": {
       "item": "oc2:transistor"

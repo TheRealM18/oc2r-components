@@ -20,6 +20,6 @@ public final class LibreComponents {
 
         Items.initialize();
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Manuals::initialize);
-        ItemGroup.TAB_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
+//        ItemGroup.COMMON.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
