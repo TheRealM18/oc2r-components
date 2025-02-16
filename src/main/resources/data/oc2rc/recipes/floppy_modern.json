@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ITI",
+    "QBQ",
+    "QBQ"
+  ],
+  "key": {
+    "I": {
+      "item": "oc2rc:floppy"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "Q": {
+      "tag": "forge:gems/quartz"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2rc:floppy_modern"
+  }
+}

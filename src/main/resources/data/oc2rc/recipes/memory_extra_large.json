@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DTD",
+    "EBE",
+    "DTD"
+  ],
+  "key": {
+    "D": {
+      "item": "oc2rc:memory_large"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    },
+    "E": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "oc2rc:memory_extra_large"
+  }
+}

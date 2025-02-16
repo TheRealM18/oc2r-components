@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GTG",
+    " B "
+  ],
+  "key": {
+    "G": {
+      "item": "oc2rc:memory_small"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2rc:memory_medium"
+  }
+}

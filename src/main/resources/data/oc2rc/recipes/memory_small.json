@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ITI",
+    " B ",
+    "ITI"
+  ],
+  "key": {
+    "I": {
+      "item": "oc2r:memory_large"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2rc:memory_small"
+  }
+}

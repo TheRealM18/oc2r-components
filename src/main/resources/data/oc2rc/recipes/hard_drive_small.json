@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ITI",
+    "EBE",
+    "ITI"
+  ],
+  "key": {
+    "I": {
+      "item": "oc2r:hard_drive_large"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    },
+    "E": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "oc2rc:hard_drive_small"
+  }
+}

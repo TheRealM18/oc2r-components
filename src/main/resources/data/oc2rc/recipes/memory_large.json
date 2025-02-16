@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DTD",
+    " B "
+  ],
+  "key": {
+    "D": {
+      "item": "oc2rc:memory_medium"
+    },
+    "T": {
+      "item": "oc2r:transistor"
+    },
+    "B": {
+      "item": "oc2r:circuit_board"
+    }
+  },
+  "result": {
+    "item": "oc2rc:memory_large"
+  }
+}

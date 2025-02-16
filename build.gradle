@@ -88,7 +88,7 @@ dependencies {
     implementation fg.deobf("curse.maven:markdownmanual-502485:3738124")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:9.7.0.180")
 
-    implementation fg.deobf("curse.maven:libre-computers-1163239:6137004")
+//    implementation fg.deobf("curse.maven:libre-computers-1163239:6137004")
 
     }
 
