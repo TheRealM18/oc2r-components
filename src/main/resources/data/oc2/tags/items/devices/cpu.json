@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "librecomponents:cpu_tier_1",
-    "librecomponents:cpu_tier_2",
-    "librecomponents:cpu_tier_3",
-    "librecomponents:cpu_tier_4"
-  ]
-}

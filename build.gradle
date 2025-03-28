@@ -31,7 +31,7 @@ def getGitRef() {
 }
 
 version = "${semver}+${getGitRef()}"
-group = "com.therealm18studios.librecomponents"
+group = "com.therealm18studios.oc2rc"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -71,15 +71,19 @@ repositories {
             }
         }
     }
+    flatDir {
+        dirs("libs")
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
+    implementation fileTree(dir: 'libs', include: '*.jar')
     implementation fg.deobf("curse.maven:markdownmanual-502485:4873115")
     implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
-    implementation fg.deobf("curse.maven:libre-computers-1163239:6126363")
+//    implementation fg.deobf("curse.maven:libre-computers-1163239:6126363")
 
     runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.3.0.4")
 }

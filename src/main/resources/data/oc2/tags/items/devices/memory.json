@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "librecomponents:memory_small",
-    "librecomponents:memory_medium",
-    "librecomponents:memory_large",
-    "librecomponents:memory_extra_large"
-  ]
-}

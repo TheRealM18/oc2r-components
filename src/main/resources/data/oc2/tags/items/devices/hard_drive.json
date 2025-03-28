@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "librecomponents:hard_drive_small",
-    "librecomponents:hard_drive_medium",
-    "librecomponents:hard_drive_large",
-    "librecomponents:hard_drive_extra_large"
-  ]
-}
