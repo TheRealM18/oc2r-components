@@ -1,7 +1,7 @@
 {
-  "item_group.oc2rc.common": "Libre Components",
+  "item_group.oc2rc.common": "OC2R Components",
 
-  "manual.oc2rc.items": "Libre Components",
+  "manual.oc2rc.items": "OC2R Components",
 
   "item.oc2rc.cpu_tier_1": "CPU Tier 5",
   "item.oc2rc.cpu_tier_1.desc": "Processes computer instructions.",
