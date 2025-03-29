@@ -16,10 +16,10 @@
       "item": "librecomponents:cpu_tier_1"
     },
     "S": {
-      "item": "oc2:silicon_wafer"
+      "item": "oc2r:silicon_wafer"
     },
     "B": {
-      "item": "oc2:circuit_board"
+      "item": "oc2r:circuit_board"
     }
   },
   "result": {

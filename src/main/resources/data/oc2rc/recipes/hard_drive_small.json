@@ -6,13 +6,13 @@
   ],
   "key": {
     "I": {
-      "item": "oc2:hard_drive_extra_large"
+      "item": "oc2r:hard_drive_extra_large"
     },
     "T": {
-      "item": "oc2:transistor"
+      "item": "oc2r:transistor"
     },
     "B": {
-      "item": "oc2:circuit_board"
+      "item": "oc2r:circuit_board"
     },
     "E": {
       "tag": "forge:gems/emerald"

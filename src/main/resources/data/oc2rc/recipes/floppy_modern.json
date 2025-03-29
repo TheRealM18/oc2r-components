@@ -10,13 +10,13 @@
       "item": "librecomponents:floppy"
     },
     "T": {
-      "item": "oc2:transistor"
+      "item": "oc2r:transistor"
     },
     "Q": {
       "tag": "forge:gems/quartz"
     },
     "B": {
-      "item": "oc2:circuit_board"
+      "item": "oc2r:circuit_board"
     }
   },
   "result": {
