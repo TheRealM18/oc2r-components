@@ -99,7 +99,7 @@ minecraft {
             property "forge.logging.console.level", "debug"
 
             mods {
-                librecomponents {
+                oc2rcomponents {
                     source sourceSets.main
                 }
             }
@@ -107,23 +107,23 @@ minecraft {
 
         client {
             workingDirectory project.file("runclient")
-            property "forge.enabledGameTestNamespaces", "librecomponents"
+            property "forge.enabledGameTestNamespaces", "oc2rcomponents"
         }
 
         server {
             workingDirectory project.file("run")
-            property "forge.enabledGameTestNamespaces", "librecomponents"
+            property "forge.enabledGameTestNamespaces", "oc2rcomponents"
             arg "--nogui"
         }
 
         gameTestServer {
             workingDirectory project.file('run')
-            property "forge.enabledGameTestNamespaces", "librecomponents"
+            property "forge.enabledGameTestNamespaces", "oc2rcomponents"
         }
 
         data {
             workingDirectory project.file("run")
-            args "--mod", "librecomponents", "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources")
+            args "--mod", "oc2rcomponents", "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources")
         }
     }
 }
@@ -140,14 +140,14 @@ jar {
     manifest {
         attributes([
             "FMLAT"                   : "accesstransformer.cfg",
-            "Specification-Title"     : "librecomponents",
+            "Specification-Title"     : "oc2rcomponents",
             "Specification-Vendor"    : "The Realm 18 Studios",
             "Specification-Version"   : "1",
             "Implementation-Title"    : project.name,
             "Implementation-Version"  : "${semver}",
             "Implementation-Vendor"   : "The Realm 18 Studios",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            "MixinConfigs"            : "mixins.librecomponents.json",
+            "MixinConfigs"            : "mixins.oc2rc.json",
             "ContainedDeps"           : "commons-collections4-4.4.jar"
         ])
     }
