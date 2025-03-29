@@ -1,10 +1,10 @@
 package com.therealm18studios.oc2rc.common.item;
 
 import com.therealm18studios.oc2rc.OC2RC;
-import li.cil.oc2r.common.item.MemoryItem;
-import li.cil.oc2r.common.item.HardDriveItem;
-import li.cil.oc2r.common.item.CPUItem;
-import li.cil.oc2r.common.item.FloppyItem;
+import li.cil.oc2.common.item.MemoryItem;
+import li.cil.oc2.common.item.HardDriveItem;
+import li.cil.oc2.common.item.CPUItem;
+import li.cil.oc2.common.item.FloppyItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

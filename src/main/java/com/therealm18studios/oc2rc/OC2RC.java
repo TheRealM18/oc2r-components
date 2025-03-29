@@ -3,7 +3,7 @@ package com.therealm18studios.oc2rc;
 import com.therealm18studios.oc2rc.common.item.ItemGroup;
 import com.therealm18studios.oc2rc.common.item.Items;
 import com.therealm18studios.oc2rc.manual.Manuals;
-import li.cil.oc2r.common.ConfigManager;
+import li.cil.oc2.common.ConfigManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
