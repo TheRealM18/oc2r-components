@@ -4,28 +4,28 @@ issueTrackerURL = "https://github.com/Libre-Computers/LibreComponents/issues"
 license = "MIT"
 
 [[mods]]
-modId = "librecomponents"
+modId = "oc2rc"
 version = "${file.jarVersion}"
-displayName = "Libre Components"
+displayName = "OC2R: Components"
 authors = "The Realm 18 Studios"
 description = '''
 Libre Drives all the extra components you need.
 '''
 
-[[dependencies.librecomponents]]
+[[dependencies.oc2rc]]
 modId = "forge"
 mandatory = true
 versionRange = "[40.1.68,)"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.librecomponents]]
+[[dependencies.oc2rc]]
 modId = "minecraft"
 mandatory = true
 versionRange = "1.20.1"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.librecomponents]]
-modId = "oc2"
+[[dependencies.oc2rc]]
+modId = "oc2r"
 mandatory = false
 versionRange = "[1.1.0,)"
 side = "BOTH"
