@@ -6,7 +6,7 @@
   ],
   "key": {
     "D": {
-      "item": "librecomponents:hard_drive_medium"
+      "item": "oc2rc:hard_drive_medium"
     },
     "T": {
       "item": "oc2r:transistor"
@@ -19,6 +19,6 @@
     }
   },
   "result": {
-    "item": "librecomponents:hard_drive_large"
+    "item": "oc2rc:hard_drive_large"
   }
 }

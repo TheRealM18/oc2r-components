@@ -7,7 +7,7 @@
   ],
   "key": {
     "D": {
-      "item": "librecomponents:memory_large"
+      "item": "oc2rc:memory_large"
     },
     "T": {
       "item": "oc2r:transistor"
@@ -20,6 +20,6 @@
     }
   },
   "result": {
-    "item": "librecomponents:memory_extra_large"
+    "item": "oc2rc:memory_extra_large"
   }
 }

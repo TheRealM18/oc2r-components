@@ -6,7 +6,7 @@
   ],
   "key": {
     "G": {
-      "item": "librecomponents:memory_small"
+      "item": "oc2rc:memory_small"
     },
     "T": {
       "item": "oc2r:transistor"
@@ -16,6 +16,6 @@
     }
   },
   "result": {
-    "item": "librecomponents:memory_medium"
+    "item": "oc2rc:memory_medium"
   }
 }

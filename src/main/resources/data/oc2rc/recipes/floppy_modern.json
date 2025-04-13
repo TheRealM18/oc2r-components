@@ -7,7 +7,7 @@
   ],
   "key": {
     "I": {
-      "item": "librecomponents:floppy"
+      "item": "oc2rc:floppy"
     },
     "T": {
       "item": "oc2r:transistor"
@@ -20,6 +20,6 @@
     }
   },
   "result": {
-    "item": "librecomponents:floppy_modern"
+    "item": "oc2rc:floppy_modern"
   }
 }

@@ -13,7 +13,7 @@
       "tag": "forge:ingots/gold"
     },
     "T": {
-      "item": "librecomponents:cpu_tier_3"
+      "item": "oc2rc:cpu_tier_3"
     },
     "S": {
       "item": "oc2r:silicon_wafer"
@@ -23,6 +23,6 @@
     }
   },
   "result": {
-    "item": "librecomponents:cpu_tier_4"
+    "item": "oc2rc:cpu_tier_4"
   }
 }
