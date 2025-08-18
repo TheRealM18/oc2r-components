@@ -5,12 +5,10 @@ pluginManagement {
         maven { url "https://repo.spongepowered.org/repository/maven-public/" }
     }
 }
-
-apply from: 'minecraft.gradle'
-rootProject.name = "OC2RComponents-${minecraft_version}-${minecraft_sdk}"
+rootProject.name = "oc2rc-${minecraft_version}-${minecraft_sdk}"
 
 def substituteLocal(final directoryName, final libraryName) {
-    final def path = new File("../${directoryName}");
+    final def path = new File("../${directoryName}")
     if (path.exists()) {
         println("Found local [${directoryName}] project, substituting...")
         includeBuild(path) {
@@ -24,4 +22,4 @@ def substituteLocal(final directoryName, final libraryName) {
 substituteLocal('sedna-mc', 'curse.maven:sedna-511276')
 substituteLocal('ceres', 'li.cil.ceres:ceres')
 substituteLocal('sedna', 'li.cil.sedna:sedna')
-substituteLocal('buildroot', 'li.cil.sedna:sedna-buildroot')
+substituteLocal('minux', 'li.cil.sedna:sedna-buildroot')
