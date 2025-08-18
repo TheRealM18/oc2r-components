@@ -15,9 +15,6 @@ public final class OC2RC {
     public static String MOD_ID = "oc2rc";
 
     public OC2RC() {
-
-        ConfigManager.initialize();
-
         Items.initialize();
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Manuals::initialize);
         ItemGroup.TAB_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
