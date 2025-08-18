@@ -142,6 +142,8 @@ dependencies {
 
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-${minecraft_sdk}:${jei_version}")
 
+    implementation fg.deobf("curse.maven:oc2r-${oc2r_project_id}:${oc2r_file_id}")
+
     jarJar(group: 'libs', name: 'sedna', version: '[]') {
         jarJar.pin(it, "")
     }
