@@ -30,9 +30,12 @@ logs
 # Files from Forge MDK
 forge*changelog.txt
 /src/generated/
+/src/main/resources/natives/
 
 #vscode
 .vscode
+
+libs/*.jar
 
 # Don't ignore bin from scripts
 !/src/main/scripts/bin/
