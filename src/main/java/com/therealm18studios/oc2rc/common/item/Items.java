@@ -40,13 +40,13 @@ public final class Items {
         new HardDriveItem(268435456, DyeColor.YELLOW));
 
     public static final RegistryObject<CPUItem> CPU_TIER_1 = register("cpu_tier_1", () ->
-        new CPUItem(250000000));
-    public static final RegistryObject<CPUItem> CPU_TIER_2 = register("cpu_tier_2", () ->
         new CPUItem(300000000));
-    public static final RegistryObject<CPUItem> CPU_TIER_3 = register("cpu_tier_3", () ->
-        new CPUItem(350000000));
-    public static final RegistryObject<CPUItem> CPU_TIER_4 = register("cpu_tier_4", () ->
+    public static final RegistryObject<CPUItem> CPU_TIER_2 = register("cpu_tier_2", () ->
         new CPUItem(400000000));
+    public static final RegistryObject<CPUItem> CPU_TIER_3 = register("cpu_tier_3", () ->
+        new CPUItem(500000000));
+    public static final RegistryObject<CPUItem> CPU_TIER_4 = register("cpu_tier_4", () ->
+        new CPUItem(600000000));
 
     public static final RegistryObject<FloppyItem> FLOPPY = register("floppy", () ->
         new FloppyItem(2949120));
