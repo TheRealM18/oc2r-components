@@ -25,6 +25,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: ${{ runner.os }}-gradle-
 
+      - name: Fix Windows
+        run: |
+          chmod +x gradlew
       - name: build
         run: |
           ./gradlew build
