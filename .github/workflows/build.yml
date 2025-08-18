@@ -15,6 +15,9 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Fix Windows
+        run: |
+          chmod +x gradlew
       - uses: actions/checkout@v4
 
       - uses: actions/cache@v4
