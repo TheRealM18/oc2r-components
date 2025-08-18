@@ -142,21 +142,6 @@ dependencies {
 
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-${minecraft_sdk}:${jei_version}")
 
-    if (debug_embeddium.toBoolean())
-    {
-        runtimeOnly fg.deobf("curse.maven:embeddium-${embeddium_project_id}:${embeddium_file_id}")
-    }
-
-    if (debug_embeddium_plus_plus.toBoolean())
-    {
-        runtimeOnly fg.deobf("curse.maven:embeddiumplus-${embeddium_plus_plus_project_id}:${embeddium_plus_plus_file_id}")
-    }
-
-    if (debug_oculus.toBoolean())
-    {
-        runtimeOnly fg.deobf("curse.maven:oculus-${oculus_project_id}:${oculus_file_id}")
-    }
-
     jarJar(group: 'libs', name: 'sedna', version: '[]') {
         jarJar.pin(it, "")
     }
