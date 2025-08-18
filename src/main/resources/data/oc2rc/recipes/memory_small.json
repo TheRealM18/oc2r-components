@@ -2,7 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "ITI",
-    " B "
+    "EBE",
+    "ITI"
   ],
   "key": {
     "I": {
@@ -13,6 +14,9 @@
     },
     "B": {
       "item": "oc2r:circuit_board"
+    },
+    "E": {
+      "item": "minecraft:emerald"
     }
   },
   "result": {

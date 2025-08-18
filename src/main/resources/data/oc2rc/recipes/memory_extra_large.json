@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "DTD",
-    "EBE",
+    "SBS",
     "DTD"
   ],
   "key": {
@@ -15,8 +15,8 @@
     "B": {
       "item": "oc2r:circuit_board"
     },
-    "E": {
-      "tag": "forge:gems/emerald"
+    "S": {
+      "item": "minecraft:nether_star"
     }
   },
   "result": {
