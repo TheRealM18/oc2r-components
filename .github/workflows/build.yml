@@ -15,9 +15,6 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Fix Windows
-        run: |
-          chmod +x gradlew
       - uses: actions/checkout@v4
 
       - uses: actions/cache@v4
@@ -28,6 +25,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: ${{ runner.os }}-gradle-
 
+      - name: Fix Windows
+        run: |
+          chmod +x gradlew
       - name: build
         run: |
           ./gradlew build
