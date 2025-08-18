@@ -160,9 +160,6 @@ tasks.register('copyLicensesToResources', Copy) {
     include "LICENSE*"
 }
 
-processResources.dependsOn(packageScripts)
-processResources.dependsOn(copyLicensesToResources)
-
 tasks.named('jarJar'){
 }
 
