@@ -193,8 +193,8 @@ curseforge {
         addGameVersion "Java 17"
         mainArtifact "build/libs/oc2rc-${minecraft_version}-${minecraft_sdk}-${version}.jar"
         relations {
-            requiredDependency "architectury-api",
-            requiredDependency "markdownmanual",
+            requiredDependency "architectury-api"
+            requiredDependency "markdownmanual"
             requiredDependency "oc2r"
         }
     }
@@ -209,8 +209,8 @@ modrinth {
     loaders = [minecraft_sdk]
     changelog = System.getenv("CHANGELOG") ?: "Changelog not available."
     dependencies {
-        required.project "architectury-api",
-        required.project "markdownmanual",
+        required.project "architectury-api"
+        required.project "markdownmanual"
         required.project "oc2r"
     }
 }
