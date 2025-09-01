@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "librecomponents:memory_small"
+      "oc2rc:memory_small"
     ]
   },
   "criteria": {
@@ -33,7 +33,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "librecomponents:memory_small"
+        "recipe": "oc2rc:memory_small"
       }
     }
   },

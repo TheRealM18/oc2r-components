@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "librecomponents:hard_drive_extra_large"
+      "oc2rc:hard_drive_extra_large"
     ]
   },
   "criteria": {
@@ -33,7 +33,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "librecomponents:hard_drive_extra_large"
+        "recipe": "oc2rc:hard_drive_extra_large"
       }
     }
   },

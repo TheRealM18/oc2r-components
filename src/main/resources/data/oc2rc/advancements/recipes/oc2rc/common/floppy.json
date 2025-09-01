@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "librecomponents:floppy"
+      "oc2rc:floppy"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "librecomponents:floppy"
+        "recipe": "oc2rc:floppy"
       }
     }
   },

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "librecomponents:memory_large"
+      "oc2rc:memory_large"
     ]
   },
   "criteria": {
@@ -33,7 +33,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "librecomponents:memory_large"
+        "recipe": "oc2rc:memory_large"
       }
     }
   },
