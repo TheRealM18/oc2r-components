@@ -191,7 +191,7 @@ curseforge {
         addGameVersion getCurseforgeSDKValue(minecraft_sdk)
         addGameVersion minecraft_version
         addGameVersion "Java 17"
-        mainArtifact "build/libs/damos-${minecraft_version}-${minecraft_sdk}-${version}.jar"
+        mainArtifact "build/libs/oc2rc-${minecraft_version}-${minecraft_sdk}-${version}.jar"
         relations {
             requiredDependency "architectury-api",
             requiredDependency "markdownmanual",
