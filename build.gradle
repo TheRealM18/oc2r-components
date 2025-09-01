@@ -179,6 +179,7 @@ static def getCurseforgeSDKValue(minecraft_sdk) {
     }
 }
 
+
 curseforge {
     apiKey = System.getenv("CURSEFORGE_API_KEY") ?: ""
 
@@ -190,10 +191,10 @@ curseforge {
         addGameVersion getCurseforgeSDKValue(minecraft_sdk)
         addGameVersion minecraft_version
         addGameVersion "Java 17"
-        mainArtifact "build/libs/oc2rc-${minecraft_version}-${minecraft_sdk}-${version}.jar"
+        mainArtifact "build/libs/damos-${minecraft_version}-${minecraft_sdk}-${version}.jar"
         relations {
-            requiredDependency "architectury-api"
-            requiredDependency "markdownmanual"
+            requiredDependency "architectury-api",
+            requiredDependency "markdownmanual",
             requiredDependency "oc2r"
         }
     }
@@ -208,8 +209,8 @@ modrinth {
     loaders = [minecraft_sdk]
     changelog = System.getenv("CHANGELOG") ?: "Changelog not available."
     dependencies {
-        required.project "architectury-api"
-        required.project "markdownmanual"
+        required.project "architectury-api",
+        required.project "markdownmanual",
         required.project "oc2r"
     }
 }
