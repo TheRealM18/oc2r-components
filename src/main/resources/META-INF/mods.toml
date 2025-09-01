@@ -27,6 +27,6 @@ side = "BOTH"
 [[dependencies.oc2rc]]
 modId = "oc2r"
 mandatory = false
-versionRange = "[2.2.1,)"
+versionRange = "[2.2.3,)"
 side = "BOTH"
 ordering = "AFTER"
