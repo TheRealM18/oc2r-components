@@ -12,7 +12,7 @@
         "items": [
           {
             "items": [
-              "oc2:computer"
+              "oc2r:computer"
             ]
           }
         ]
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "oc2:robot"
+              "oc2r:robot"
             ]
           }
         ]
