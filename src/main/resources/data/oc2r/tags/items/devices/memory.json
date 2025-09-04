@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oc2rc:memory_small",
-    "oc2rc:memory_medium",
-    "oc2rc:memory_large",
-    "oc2rc:memory_extra_large"
-  ]
-}

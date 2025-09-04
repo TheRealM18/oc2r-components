@@ -9,7 +9,7 @@ version = "${file.jarVersion}"
 displayName = "OC2R: Components"
 authors = "The Realm 18 Studios"
 description = '''
-Libre Drives all the extra components you need.
+OC2R Components all the extra components you need.
 '''
 
 [[dependencies.oc2rc]]
@@ -26,7 +26,13 @@ ordering = "NONE"
 side = "BOTH"
 [[dependencies.oc2rc]]
 modId = "oc2r"
-mandatory = false
-versionRange = "[2.2.3,)"
+mandatory = true
+versionRange = "[2.2.4,)"
+side = "BOTH"
+ordering = "AFTER"
+[[dependencies.oc2rc]]
+modId = "oc2rcore"
+mandatory = true
+versionRange = "[1.0.0,)"
 side = "BOTH"
 ordering = "AFTER"

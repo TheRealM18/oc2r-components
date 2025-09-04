@@ -84,6 +84,8 @@ dependencies {
 
     implementation fg.deobf("curse.maven:oc2r-${oc2r_project_id}:${oc2r_file_id}")
 
+    implementation fileTree(dir: 'libs', include: ['oc2rcore-1.20.1-forge-999.999.999+*.jar'])
+
 }
 
 System.setProperty("line.separator", "\n")

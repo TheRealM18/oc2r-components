@@ -18,8 +18,3 @@ def substituteLocal(final directoryName, final libraryName) {
         }
     }
 }
-
-substituteLocal('oc2r', 'curse.maven:oc2r-1037738:6914611')
-substituteLocal('ceres', 'li.cil.ceres:ceres')
-substituteLocal('sedna', 'li.cil.sedna:sedna')
-substituteLocal('minux', 'li.cil.sedna:sedna-buildroot')

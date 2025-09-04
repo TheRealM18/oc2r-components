@@ -1,13 +1,7 @@
 package com.therealm18studios.oc2rc;
 
-import com.therealm18studios.oc2rc.common.item.ItemGroup;
 import com.therealm18studios.oc2rc.common.item.Items;
-import com.therealm18studios.oc2rc.manual.Manuals;
-import li.cil.oc2.common.ConfigManager;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("oc2rc")
 public final class OC2RC {
@@ -16,7 +10,5 @@ public final class OC2RC {
 
     public OC2RC() {
         Items.initialize();
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Manuals::initialize);
-        ItemGroup.TAB_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }
