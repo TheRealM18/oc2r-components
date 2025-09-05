@@ -167,7 +167,7 @@ jar {
 }
 
 publish {
-    dependsOn(tasks.modrinth)
+//    dependsOn(tasks.modrinth)
     dependsOn(tasks.curseforge)
 }
 
@@ -198,24 +198,25 @@ curseforge {
             requiredDependency "architectury-api"
             requiredDependency "markdownmanual"
             requiredDependency "oc2r"
+            requiredDependency "oc2r-addon-core"
         }
     }
 }
-
-modrinth {
-    token = System.getenv("MODRINTH_TOKEN")
-    projectId = modrinth_project_id
-    versionType = System.getenv('RELEASE_TYPE') ?: "alpha"
-    uploadFile = "build/libs/oc2rc-${minecraft_version}-${minecraft_sdk}-${version}.jar"
-    gameVersions = [minecraft_version]
-    loaders = [minecraft_sdk]
-    changelog = System.getenv("CHANGELOG") ?: "Changelog not available."
-    dependencies {
-        required.project "architectury-api"
-        required.project "markdownmanual"
-        required.project "oc2r"
-    }
-}
+//
+//modrinth {
+//    token = System.getenv("MODRINTH_TOKEN")
+//    projectId = modrinth_project_id
+//    versionType = System.getenv('RELEASE_TYPE') ?: "alpha"
+//    uploadFile = "build/libs/oc2rc-${minecraft_version}-${minecraft_sdk}-${version}.jar"
+//    gameVersions = [minecraft_version]
+//    loaders = [minecraft_sdk]
+//    changelog = System.getenv("CHANGELOG") ?: "Changelog not available."
+//    dependencies {
+//        required.project "architectury-api"
+//        required.project "markdownmanual"
+//        required.project "oc2r"
+//    }
+//}
 
 idea {
     module {
