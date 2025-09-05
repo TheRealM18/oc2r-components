@@ -215,6 +215,7 @@ curseforge {
 //        required.project "architectury-api"
 //        required.project "markdownmanual"
 //        required.project "oc2r"
+//        required.project "oc2r-addon-core"
 //    }
 //}
 
