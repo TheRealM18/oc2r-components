@@ -30,9 +30,3 @@ mandatory = true
 versionRange = "[2.2.4,)"
 side = "BOTH"
 ordering = "AFTER"
-[[dependencies.oc2rc]]
-modId = "oc2rcore"
-mandatory = true
-versionRange = "[1.0.0,)"
-side = "BOTH"
-ordering = "AFTER"
