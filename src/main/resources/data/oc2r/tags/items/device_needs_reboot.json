@@ -12,6 +12,10 @@
     "oc2rc:cpu_tier_1",
     "oc2rc:cpu_tier_2",
     "oc2rc:cpu_tier_3",
-    "oc2rc:cpu_tier_4"
+    "oc2rc:cpu_tier_4",
+    "oc2rc:flash_memory_small",
+    "oc2rc:flash_memory_medium",
+    "oc2rc:flash_memory_large",
+    "oc2rc:flash_memory_extra_large"
   ]
 }
